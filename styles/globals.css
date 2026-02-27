@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #4640DE;
+  --navy: #25324B;
+  --body-text: #515B6F;
+  --muted-text: #7C8493;
+  --tag-green: #56CDAD;
+  --tag-orange: #FFB836;
+  --tag-blue: #4640DE;
+  --background: #FFFFFF;
+  --foreground: #25324B;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-navy: var(--navy);
+  --color-body-text: var(--body-text);
+  --color-muted-text: var(--muted-text);
+  --color-tag-green: var(--tag-green);
+  --color-tag-orange: var(--tag-orange);
+  --color-tag-blue: var(--tag-blue);
+  --font-sans: 'Epilogue', var(--font-geist-sans);
+  --font-inter: 'Inter', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +36,6 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--navy);
+  font-family: 'Epilogue', sans-serif;
 }
