@@ -2,20 +2,27 @@ import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <nav className="flex items-center justify-between px-16 py-6 border-b border-gray-100 bg-white">
-            <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">Q</div>
-                <span className="text-navy text-2xl font-bold font-sans">QuickHire</span>
+        <nav className="flex items-center justify-between px-16 py-6 bg-transparent relative z-30 max-w-[1600px] mx-auto">
+            <div className="flex items-center gap-12">
+                {/* Logo */}
+                <Link href="/" className="flex items-center gap-3 cursor-pointer">
+                    <div className="w-8 h-8 rounded-full border-[5px] border-[#4640DE] flex items-center justify-center p-[2px]">
+                        <div className="w-3 h-3 bg-[#4640DE] rounded-full"></div>
+                    </div>
+                    <span className="text-navy text-2xl font-bold tracking-tight">QuickHire</span>
+                </Link>
+
+                {/* Left Links */}
+                <div className="hidden md:flex items-center gap-6 ml-4">
+                    <Link href="/" className="text-muted-text hover:text-navy font-semibold transition-colors">Find Jobs</Link>
+                    <Link href="/companies" className="text-muted-text hover:text-navy font-semibold transition-colors">Browse Companies</Link>
+                </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-10">
-                <Link href="/" className="text-body-text hover:text-primary font-medium">Find Jobs</Link>
-                <Link href="/companies" className="text-body-text hover:text-primary font-medium">Browse Companies</Link>
-            </div>
-
-            <div className="flex items-center gap-4 border-l pl-4 border-gray-100">
-                <Link href="/login" className="text-primary font-bold px-4 py-2">Login</Link>
-                <Link href="/signup" className="bg-primary text-white font-bold px-6 py-2 rounded-sm hover:opacity-90 transition-opacity">Sign Up</Link>
+            {/* Right Links */}
+            <div className="flex items-center gap-8 pl-8 border-l border-gray-200">
+                <Link href="/login" className="text-primary font-bold hover:text-navy transition-colors">Login</Link>
+                <Link href="/signup" className="bg-primary text-white font-bold px-10 py-3 hover:bg-navy transition-colors text-sm tracking-wide">Sign Up</Link>
             </div>
         </nav>
     );
