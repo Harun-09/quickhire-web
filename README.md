@@ -16,7 +16,7 @@ This app is built with **React.js** and consumes the Laravel API from `quickhire
 ## Pages
 
 - `/` Home and job listing
-- `/jobs/[id]` Job details and apply form
+- `/jobs/:id` Job details and apply form
 - `/companies` Company browsing page
 - `/admin` Basic admin dashboard
 - `/login` Login UI
@@ -35,10 +35,10 @@ This app is built with **React.js** and consumes the Laravel API from `quickhire
 
 ## Environment Variables
 
-Create `.env.local` in this folder:
+Create `.env` or `.env.local` in this folder:
 
 ```bash
-NEXT_PUBLIC_API_URL=http://localhost:8000/api
+VITE_API_URL=http://localhost:8000/api
 ```
 
 If not provided, the app falls back to `http://localhost:8000/api`.
@@ -58,7 +58,7 @@ App will run at:
 
 - `npm run dev` Start development server
 - `npm run build` Build for production
-- `npm run start` Start production server
+- `npm run preview` Preview production build
 - `npm run lint` Run lint checks
 
 ## API Endpoints Used

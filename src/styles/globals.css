@@ -23,7 +23,7 @@
   --color-tag-green: var(--tag-green);
   --color-tag-orange: var(--tag-orange);
   --color-tag-blue: var(--tag-blue);
-  --font-sans: 'Epilogue', var(--font-geist-sans);
+  --font-sans: 'Epilogue', sans-serif;
   --font-inter: 'Inter', sans-serif;
 }
 
