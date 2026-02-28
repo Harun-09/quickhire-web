@@ -54,6 +54,8 @@ App will run at:
 
 - `http://localhost:3000`
 
+Backend should be running at `http://localhost:8000` (Laravel API).
+
 ## Available Scripts
 
 - `npm run dev` Start development server
@@ -68,6 +70,29 @@ App will run at:
 - `POST /api/jobs`
 - `DELETE /api/jobs/{id}`
 - `POST /api/applications`
+
+## Demo Video Requirement (Loom)
+
+Record a **3-5 minute** demo and show these 4 flows clearly:
+
+1. Job listing page (browse/search/filter).
+2. Job details page.
+3. Apply flow (submit application form).
+4. Admin flow (create job + delete job).
+
+## Suggested Demo Script
+
+1. Open home page and show search/filter behavior.
+2. Open one job details page and explain key fields.
+3. Submit one application and show success/error feedback.
+4. Open admin page, create one job, then delete one job.
+5. End by showing repo link (and live link if available).
+
+## Submission Checklist
+
+- GitHub repository link
+- Loom/demo video link
+- Live link (optional)
 
 ## Notes
 
