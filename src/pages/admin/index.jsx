@@ -121,6 +121,11 @@ export default function AdminDashboard() {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
+                            {loading && (
+                                <tr>
+                                    <td colSpan="4" className="p-10 text-center text-muted-text italic">Loading jobs...</td>
+                                </tr>
+                            )}
                             {jobs.map(job => (
                                 <tr key={job.id}>
                                     <td className="p-4 font-bold">{job.title}</td>
