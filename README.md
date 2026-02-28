@@ -2,7 +2,7 @@
 
 Frontend for the QuickHire mini job board project.
 
-This app is built with **Next.js (React)** and consumes the Laravel API from `quickhire-api`.
+This app is built with **React.js** and consumes the Laravel API from `quickhire-api`.
 
 ## Features
 
@@ -24,8 +24,7 @@ This app is built with **Next.js (React)** and consumes the Laravel API from `qu
 
 ## Tech Stack
 
-- Next.js 16 (Pages Router)
-- React 19
+- React.js 19
 - Tailwind CSS 4
 
 ## Prerequisites
